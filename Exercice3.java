@@ -5,9 +5,9 @@ class Exercice3 {
 		Scanner sc = new Scanner(System.in);
         System.out.println("Veuillez saisir un nombre:");
         int num = sc.nextInt();
-        String signe = (num1 >= num2) ? ((num1 >= num3) ? num1 : num3) : (num2 >= num3) ? num2 : num3;
+        String signe = (num == 0) ? "null" : ((num > 0) ? "positif" : "negatif");
 
-        System.out.println("Le maximum de ces trois nombres est " + max);
+        System.out.println("Le nombre est " + signe);
         
 	}
 
